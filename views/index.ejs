@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title><%= seo.title %></title>
+<meta name="description" content="<%= seo.description %>">
+<meta name="keywords" content="<%= seo.keywords %>">
+<link rel="canonical" href="https://<%= company.website.replace('www.','') %>/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="<%= seo.title %>">
+<meta property="og:description" content="<%= seo.description %>">
+<meta property="og:image" content="/img/hero-1.jpg">
+<meta property="og:locale" content="vi_VN">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23033F73'/%3E%3Cpath d='M8 25 L8 19 L20 7 L25 7 L25 13 L13 25 Z' fill='%23D93B38'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div><%= company.slogan %></div>
+    <div class="tb-right">
+      <a href="tel:<%= company.phone %>">Điện thoại: <%= company.phoneDisplay %></a>
+      <a href="mailto:<%= company.email %>">Email: <%= company.email %></a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <a href="#top" class="logo">
+        <svg class="logo-mark" viewBox="0 0 32 32" fill="none"><path d="M4 27 L4 20 L20 5 L27 5 L27 12 L11 27 Z" fill="#D93B38"/></svg>
+        <span><span class="word"><span class="new">NEW</span><span class="cons">TECHCONS</span></span><small>Xây dựng &amp; Công nghệ Môi trường</small></span>
+      </a>
+      <div class="nav-links">
+        <a href="#gioithieu">Giới thiệu</a>
+        <a href="#dichvu">Dịch vụ</a>
+        <a href="#hoso">Hồ sơ môi trường</a>
+        <a href="#duan">Dự án</a>
+        <a href="#lienhe">Liên hệ</a>
+      </div>
+      <a href="#lienhe" class="nav-cta">Nhận tư vấn →</a>
+      <button class="burger" aria-label="Mở menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </nav>
+  </div>
+</header>
+
+<div class="mobile-menu" aria-hidden="true">
+  <button class="close-btn" aria-label="Đóng menu">&times;</button>
+  <a href="#gioithieu">Giới thiệu</a>
+  <a href="#dichvu">Dịch vụ</a>
+  <a href="#hoso">Hồ sơ môi trường</a>
+  <a href="#duan">Dự án</a>
+  <a href="#lienhe">Liên hệ</a>
+  <a href="#lienhe" class="nav-cta">Nhận tư vấn →</a>
+</div>
+
+<section class="hero" id="top">
+  <div class="hero-slide active" style="background-image:url('/img/hero-1.jpg')"></div>
+  <div class="hero-slide" style="background-image:url('/img/hero-2.jpg')"></div>
+  <div class="hero-slide" style="background-image:url('/img/hero-3.jpg')"></div>
+  <div class="wrap" style="height:100%;position:relative;z-index:3;">
+    <div class="hero-content">
+      <div class="eyebrow">Tư vấn — Thiết kế — Vận hành</div>
+      <h1>Xây dựng &amp; công nghệ<br>xử lý môi trường <em>trọn gói</em></h1>
+      <p class="lead">Newtechcons tư vấn pháp lý môi trường, thiết kế thi công, vận hành và bảo trì hệ thống xử lý nước thải, nước sạch, khí thải trên toàn quốc.</p>
+      <div class="hero-ctas">
+        <a href="#lienhe" class="btn btn-primary">Nhận tư vấn miễn phí</a>
+        <a href="#duan" class="btn btn-ghost">Xem dự án đã làm</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-dots">
+    <button class="active" data-i="0" aria-label="Slide 1"></button>
+    <button data-i="1" aria-label="Slide 2"></button>
+    <button data-i="2" aria-label="Slide 3"></button>
+  </div>
+</section>
+
+<section id="gioithieu">
+  <div class="wrap">
+    <div class="about-grid reveal">
+      <div class="about-photo">
+        <img src="/img/about-photo.jpg" alt="Công trình xử lý môi trường Newtechcons" loading="lazy">
+        <div class="exp-badge"><div class="n">A–Z</div><div class="l">Tư vấn đến<br>vận hành</div></div>
+      </div>
+      <div class="about-copy">
+        <div class="eyebrow">Giới thiệu</div>
+        <h2>Công ty Cổ phần Xây dựng và Công nghệ Newtechcons</h2>
+        <p>Hoạt động trong lĩnh vực bảo dưỡng hệ thống xử lý nước, bơm và quạt công nghiệp; xây lắp công trình xử lý nước thải, nước cấp; tư vấn pháp lý và thiết kế dự án môi trường cho khách hàng công nghiệp và đô thị trên toàn quốc.</p>
+        <p>Phương châm <strong>"giá trị bền vững cho tương lai"</strong> là điều cốt lõi truyền cảm hứng cho Newtechcons phát triển, cung cấp và xây lắp các sản phẩm — dịch vụ chất lượng, đúng tiến độ.</p>
+        <div class="about-pillars">
+          <div class="pillar"><div class="pw">TÍN</div><p>Chuẩn bị đầy đủ năng lực thực thi</p></div>
+          <div class="pillar"><div class="pw">TÂM</div><p>Đặt lợi ích khách hàng lên hàng đầu</p></div>
+          <div class="pillar"><div class="pw">TỐC</div><p>Tối ưu chi phí, hoàn thành nhanh</p></div>
+        </div>
+        <a href="#lienhe" class="btn btn-outline">Xem chi tiết</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="dichvu" style="background:var(--fog);">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <div class="eyebrow">Dịch vụ của chúng tôi</div>
+      <h2>Giải pháp xử lý môi trường trọn gói</h2>
+      <p>Từ thiết kế thi công đến vận hành, bảo trì — đồng hành cùng công trình xuyên suốt vòng đời sử dụng.</p>
+    </div>
+    <div class="svc-grid reveal">
+      <div class="svc-card">
+        <div class="svc-photo"><img src="/img/svc-1.jpg" alt="Hệ thống xử lý nước thải công nghiệp" loading="lazy"></div>
+        <div class="svc-body"><h3>Hệ thống xử lý nước thải công nghiệp</h3><a href="#lienhe" class="svc-link">Liên hệ tư vấn →</a></div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-photo"><img src="/img/svc-2.jpg" alt="Hệ thống xử lý nước sạch" loading="lazy"></div>
+        <div class="svc-body"><h3>Hệ thống xử lý nước sạch</h3><a href="#lienhe" class="svc-link">Liên hệ tư vấn →</a></div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-photo"><img src="/img/svc-3.jpg" alt="Hệ thống xử lý khí thải" loading="lazy"></div>
+        <div class="svc-body"><h3>Hệ thống xử lý khí thải</h3><a href="#lienhe" class="svc-link">Liên hệ tư vấn →</a></div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-photo"><img src="/img/svc-4.jpg" alt="Bảo trì bảo dưỡng bơm quạt công nghiệp" loading="lazy"></div>
+        <div class="svc-body"><h3>Bảo trì, vệ sinh bơm quạt công nghiệp</h3><a href="#lienhe" class="svc-link">Liên hệ tư vấn →</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="hoso" class="legal">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <div class="eyebrow">Tư vấn pháp lý môi trường</div>
+      <h2>Lập hồ sơ môi trường</h2>
+      <p>Hoàn thiện thủ tục pháp lý trước và trong quá trình vận hành công trình, đúng quy định pháp luật hiện hành.</p>
+    </div>
+    <div class="legal-grid reveal">
+      <div class="legal-card">
+        <div class="legal-photo"><img src="/img/legal-1.jpg" alt="Lập báo cáo đánh giá tác động môi trường" loading="lazy"></div>
+        <div class="legal-body">
+          <h3>Đánh giá tác động môi trường (ĐTM)</h3>
+          <p>Lập báo cáo ĐTM cho dự án đầu tư mới, làm cơ sở pháp lý trước khi triển khai xây dựng.</p>
+          <a href="#lienhe" class="svc-link">Xem chi tiết →</a>
+        </div>
+      </div>
+      <div class="legal-card">
+        <div class="legal-photo"><img src="/img/legal-2.jpg" alt="Tư vấn lập giấy phép môi trường" loading="lazy"></div>
+        <div class="legal-body">
+          <h3>Giấy phép môi trường</h3>
+          <p>Tư vấn, hỗ trợ hoàn thiện hồ sơ xin cấp giấy phép môi trường theo Luật Bảo vệ môi trường.</p>
+          <a href="#lienhe" class="svc-link">Xem chi tiết →</a>
+        </div>
+      </div>
+      <div class="legal-card">
+        <div class="legal-photo"><img src="/img/legal-3.jpg" alt="Tư vấn lập đăng ký môi trường" loading="lazy"></div>
+        <div class="legal-body">
+          <h3>Đăng ký môi trường</h3>
+          <p>Tư vấn lập hồ sơ đăng ký môi trường cho các dự án, cơ sở thuộc đối tượng theo quy định.</p>
+          <a href="#lienhe" class="svc-link">Xem chi tiết →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="duan">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Dự án tiêu biểu</div>
+      <h2>Công trình công suất lớn đã triển khai</h2>
+      <p>Một số dự án tiêu biểu về quy mô công suất mà Newtechcons đã thiết kế, thi công và vận hành.</p>
+    </div>
+    <div class="projects-layout reveal">
+      <div class="project-featured">
+        <img src="/img/pl-hero.jpg" alt="Nhà máy Arcana" loading="lazy">
+        <div class="pf-body">
+          <span class="pf-badge">2,5 tấn/giờ · Hưng Yên</span>
+          <h3>Thiết kế thi công hệ thống XLNT sản xuất — Nhà máy Arcana</h3>
+          <p>Đối tác: Công ty Cơ Điện Benzen Việt Nam · KCN số 3, Hưng Yên</p>
+        </div>
+      </div>
+      <div class="project-list">
+        <div class="pl-item">
+          <div class="pl-photo"><img src="/img/project-1.jpg" alt="Vigracela" loading="lazy"></div>
+          <div class="pl-info"><div class="cap">1.500 m³/ngày đêm</div><h4>Hệ thống nước sạch KCN Tiên Sơn — Vigracela</h4><div class="loc">Bắc Ninh</div></div>
+        </div>
+        <div class="pl-item">
+          <div class="pl-photo"><img src="/img/project-2.jpg" alt="KĐT An Đồng" loading="lazy"></div>
+          <div class="pl-info"><div class="cap">1.000 m³/ngày đêm</div><h4>XLNT Khu đô thị An Đồng — Tập đoàn Hoàng Huy</h4><div class="loc">An Dương, Hải Phòng</div></div>
+        </div>
+        <div class="pl-item">
+          <div class="pl-photo"><img src="/img/project-3.jpg" alt="Nhà máy Quanta" loading="lazy"></div>
+          <div class="pl-info"><div class="cap">600 m³/ngày đêm</div><h4>Vận hành hệ thống XLNT — Nhà máy Quanta</h4><div class="loc">KCN Mỹ Thuận, Nam Định</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="clients">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <div class="eyebrow">Đối tác &amp; khách hàng</div>
+      <h2>Khách hàng của chúng tôi</h2>
+    </div>
+    <div class="clients-grid reveal">
+      <div class="client-chip">Vingroup</div>
+      <div class="client-chip">CSCEC</div>
+      <div class="client-chip">Takasago</div>
+      <div class="client-chip">Kinden VN</div>
+      <div class="client-chip">Visicons</div>
+      <div class="client-chip">Hopluc</div>
+      <div class="client-chip">Benzen</div>
+      <div class="client-chip">Kinh Bac City</div>
+      <div class="client-chip">CM Japan</div>
+      <div class="client-chip">Kurihara VN</div>
+      <div class="client-chip">Hana E&amp;C</div>
+      <div class="client-chip">Tập đoàn Hoàng Huy</div>
+    </div>
+  </div>
+</section>
+
+<section id="lienhe">
+  <div class="wrap contact-grid">
+    <div class="contact-info reveal">
+      <div class="eyebrow">Liên hệ</div>
+      <h2>Trao đổi cùng đội ngũ kỹ thuật</h2>
+      <p>Để lại thông tin, đội ngũ Newtechcons sẽ liên hệ khảo sát và tư vấn giải pháp phù hợp với công trình của bạn.</p>
+      <div class="info-row">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div><div class="lbl">Địa chỉ</div><div class="val"><%= company.address %></div></div>
+      </div>
+      <div class="info-row">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.7a2 2 0 01-.4 2.1L8 9.9a16 16 0 006 6l1.4-1.4a2 2 0 012.1-.4c.9.3 1.8.5 2.7.6a2 2 0 011.8 2z"/></svg>
+        <div><div class="lbl">Điện thoại / Hotline</div><div class="val"><%= company.phoneDisplay %> · <%= company.hotlineDisplay %></div></div>
+      </div>
+      <div class="info-row">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div><div class="lbl">Email</div><div class="val"><%= company.email %></div></div>
+      </div>
+      <div class="info-row">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8" stroke-linecap="round"/></svg>
+        <div><div class="lbl">Website</div><div class="val"><%= company.website %></div></div>
+      </div>
+      <div class="map-frame">
+        <iframe src="<%= company.mapEmbedUrl %>" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Bản đồ Newtechcons"></iframe>
+      </div>
+    </div>
+
+    <form id="contact-form" class="reveal" novalidate>
+      <div class="form-row">
+        <div class="field"><label for="name">Họ và tên</label><input id="name" name="name" type="text" placeholder="Nguyễn Văn A" required></div>
+        <div class="field"><label for="phone">Số điện thoại</label><input id="phone" name="phone" type="tel" placeholder="09xx xxx xxx" required></div>
+      </div>
+      <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="ban@congty.vn"></div>
+      <div class="field">
+        <label for="topic">Nhu cầu</label>
+        <select id="topic" name="topic">
+          <option>Tư vấn pháp lý môi trường (ĐTM / Giấy phép MT)</option>
+          <option>Thiết kế thi công hệ thống mới</option>
+          <option>Vận hành hệ thống</option>
+          <option>Bảo trì bảo dưỡng bơm quạt</option>
+          <option>Khác</option>
+        </select>
+      </div>
+      <div class="field"><label for="msg">Nội dung</label><textarea id="msg" name="message" placeholder="Mô tả ngắn về công trình / hệ thống hiện tại..."></textarea></div>
+      <button type="submit" class="submit-btn">Gửi yêu cầu tư vấn</button>
+      <div class="form-note">Thông tin của bạn chỉ dùng để liên hệ tư vấn.</div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="logo" style="margin-bottom:14px;">
+          <svg class="logo-mark" viewBox="0 0 32 32" fill="none"><path d="M4 27 L4 20 L20 5 L27 5 L27 12 L11 27 Z" fill="#D93B38"/></svg>
+          <span class="word"><span style="color:#fff;">NEW</span><span style="color:#FF6B62;">TECHCONS</span></span>
+        </div>
+        <p style="font-size:13px;max-width:260px;">Công ty Cổ phần Xây dựng và Công nghệ Newtechcons — Tư vấn pháp lý, thiết kế thi công, vận hành và bảo trì hệ thống xử lý nước thải, nước sạch, khí thải.</p>
+      </div>
+      <div>
+        <h5>Dịch vụ</h5>
+        <a href="#dichvu">Tư vấn pháp lý môi trường</a>
+        <a href="#dichvu">Thiết kế thi công hệ thống</a>
+        <a href="#dichvu">Vận hành &amp; bảo trì</a>
+      </div>
+      <div>
+        <h5>Công ty</h5>
+        <a href="#gioithieu">Giới thiệu</a>
+        <a href="#duan">Dự án</a>
+        <a href="#hoso">Hồ sơ môi trường</a>
+        <a href="#lienhe">Liên hệ</a>
+      </div>
+      <div>
+        <h5>Liên hệ</h5>
+        <p><%= company.address %></p>
+        <p><%= company.phoneDisplay %></p>
+        <p><%= company.email %></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <%= company.year %> CÔNG TY CỔ PHẦN XÂY DỰNG VÀ CÔNG NGHỆ NEWTECHCONS</span>
+      <span><%= company.website %></span>
+    </div>
+  </div>
+</footer>
+
+<div class="floating-contact">
+  <a href="mailto:<%= company.email %>" class="fc-btn fc-mail" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  <a href="<%= company.zaloUrl %>" class="fc-btn fc-zalo" aria-label="Zalo" target="_blank" rel="noopener">Zalo</a>
+  <a href="tel:<%= company.hotline %>" class="fc-btn fc-phone" aria-label="Gọi điện"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.7a2 2 0 01-.4 2.1L8 9.9a16 16 0 006 6l1.4-1.4a2 2 0 012.1-.4c.9.3 1.8.5 2.7.6a2 2 0 011.8 2z"/></svg></a>
+</div>
+
+<script src="/js/main.js" defer></script>
+</body>
+</html>
